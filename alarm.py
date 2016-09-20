@@ -1,12 +1,14 @@
 from time import sleep
 import webbrowser as wb
 
-h, m, s = map(int, input("H M S\n").split())
-time_left = 60*60*h + 60*m + s
+# Rings alarm every hour 
+while True:
+	time_left = 60 * 60
+	while time_left > 0:
+		print("Time left: ", time_left)
+		sleep(1)
+		time_left -= 1
 
-while time_left > 0:
-	print("Time left: ", time_left)
-	sleep(1)
-	time_left -= 1
-
-wb.open("alarm.mp3")
+	wb.open("alarm.mp3") # Ring the alarm.
+	sleep(60*60) # Sleep for 1 hour.
+	

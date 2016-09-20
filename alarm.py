@@ -10,5 +10,3 @@ while True:
 		time_left -= 1
 
 	wb.open("alarm.mp3") # Ring the alarm.
-	sleep(60*60) # Sleep for 1 hour.
-	

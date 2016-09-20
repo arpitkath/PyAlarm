@@ -5,7 +5,7 @@ import webbrowser as wb
 while True:
 	time_left = 60 * 60
 	while time_left > 0:
-		print("Time left: ", time_left)
+		print("Time left: ", time_left, end='\r')
 		sleep(1)
 		time_left -= 1
 
